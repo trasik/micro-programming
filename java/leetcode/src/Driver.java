@@ -1,5 +1,7 @@
+import problems.AddTwoNumbers;
 import problems.MergeStringsAlternately;
 import problems.TwoSum;
+import problems.util.ListNode;
 
 import java.util.Arrays;
 
@@ -8,6 +10,7 @@ public class Driver {
     public static void main(String[] args) {
         testMergeStringsAlternately();
         testTwoSum();
+        testAddTwoNumbers();
     }
 
     private static void testMergeStringsAlternately() {
@@ -51,6 +54,37 @@ public class Driver {
         System.out.println("Example 3: \n");
         System.out.println(ts3);
         System.out.println(Arrays.toString(ts3.solve()));
+        System.out.println();
+    }
+
+    private static void testAddTwoNumbers() {
+        ListNode atn1a = new ListNode(2);
+        atn1a.next = new ListNode(4);
+        atn1a.next.next = new ListNode(3);
+
+        ListNode atn1b = new ListNode(5);
+        atn1b.next = new ListNode(6);
+        atn1b.next.next = new ListNode(4);
+
+        ListNode atn2a = new ListNode(0);
+        ListNode atn2b = new ListNode(0);
+
+        AddTwoNumbers atn1 = new AddTwoNumbers(atn1a, atn1b);
+        AddTwoNumbers atn2 = new AddTwoNumbers(atn2a, atn2b);
+
+        System.out.println("2. Add Two Numbers \n");
+        System.out.println("Example 1: \n");
+        System.out.println(atn1);
+        ListNode result1 = atn1.solve();
+        System.out.println("Result:");
+        System.out.println(atn1.printList(result1));
+        System.out.println();
+
+        System.out.println("Example 2: \n");
+        System.out.println(atn2);
+        ListNode result2 = atn2.solve();
+        System.out.println("Result:");
+        System.out.println(atn1.printList(result2));
         System.out.println();
     }
 
