@@ -18,6 +18,7 @@ This section is to show the roadmap of intended projects and programming problem
   - [x] Set up basic IntelliJ project
   - [x] Add/Solve Merge Strings Alternately
   - [x] Add/Solve Two Sum
+  - [x] Add/Solve Add Two Numbers
 
 # Contant Me
 
