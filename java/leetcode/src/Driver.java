@@ -1,5 +1,6 @@
 import problems.AddTwoNumbers;
 import problems.MergeStringsAlternately;
+import problems.PalindromeNumber;
 import problems.TwoSum;
 import problems.util.ListNode;
 
@@ -11,6 +12,7 @@ public class Driver {
         testMergeStringsAlternately();
         testTwoSum();
         testAddTwoNumbers();
+        testPalindromeNumber();
     }
 
     private static void testMergeStringsAlternately() {
@@ -85,6 +87,28 @@ public class Driver {
         ListNode result2 = atn2.solve();
         System.out.println("Result:");
         System.out.println(atn1.printList(result2));
+        System.out.println();
+    }
+
+    private static void testPalindromeNumber() {
+        PalindromeNumber pn1 = new PalindromeNumber(121);
+        PalindromeNumber pn2 = new PalindromeNumber(-121);
+        PalindromeNumber pn3 = new PalindromeNumber(10);
+
+        System.out.println("9. Palindrome Number \n");
+        System.out.println("Example 1: \n");
+        System.out.println(pn1);
+        System.out.println(pn1.solve());
+        System.out.println();
+
+        System.out.println("Example 2: \n");
+        System.out.println(pn2);
+        System.out.println(pn2.solve());
+        System.out.println();
+
+        System.out.println("Example 3: \n");
+        System.out.println(pn3);
+        System.out.println(pn3.solve());
         System.out.println();
     }
 
